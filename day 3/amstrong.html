@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a =prompt("enter a num")
+        var c=0;
+        var t=a
+        var res=0;
+        while(t>0)
+       {
+         t=parseInt(t/10);
+         c++;
+       }
+       t=a;
+       while(t>0)
+       {
+         var r=t%10;
+         t=parseInt(t/10);
+         res=res+r**c
+       }
+       if(a==res)
+       {
+        document.write("Amstrong")
+       }
+       else
+       {
+        document.write(" not a  Amstrong")
+
+       }
+       
+
+
+    </script>
+</body>
+</html>
